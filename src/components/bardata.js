@@ -26,7 +26,7 @@ const bardata = [
     {
         id : 4 ,
         name:"Type" ,
-        item1:"House" ,
+        item1:"house" ,
         item2:"Farmhouse" ,
         item3:"Penthouse" ,
         item4:"Apartments"

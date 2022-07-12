@@ -9,8 +9,8 @@ import Bardata from './bardata' ;
 function createCard(Data) {
     return  <Cards 
         name ={Data.name}
-        price = {Data.price}
-        type = {Data.type}
+        price = {Data.Price}
+        type = {Data.Type}
         date ={Data.date}
         location = {Data.location}
         Address = {Data.Address}
@@ -20,28 +20,25 @@ function createCard(Data) {
      />
 }
 
-export default function Properties(props) {
+export default function Properties() {
     const [items , setItems] = useState(Data) ;
 
-    const filterItem = () =>{
+    const filterItem = (props) =>{
         const updateItems = Data.filter((curitem) => {
-                if(curitem.price === props){
-                    return curitem.price === props ;
+                if(curitem.Price === props){
+                    return curitem.Price === props ;
                 }
                 else if (curitem.location === props){
                     return curitem.location === props ;
                 }
-                else if (curitem.type === props){
-                    return curitem.type === props;
+                else if (curitem.Type === props){
+                    return curitem.Type === props;
                 } 
                 else if (curitem.date === props){
                     return curitem.date === props;
                 }
-                else {
-                    return  curitem;
-                }
         });
-      
+    
       setItems(updateItems)  ;
     }
     
@@ -53,7 +50,25 @@ export default function Properties(props) {
                     Search Properties to rent ......
                 </p>
                 <div className='container'> 
+                            {Bardata.map((props) => {
 
+                            return (
+                                <div>
+                                        <Dropdown style={{backgroundColor:"#7266eb"}}>
+                                                <Dropdown.Toggle id="dropdown-basic">
+                                                {props.name}
+                                                </Dropdown.Toggle>
+                                                <Dropdown.Menu>
+                                                <Dropdown.Item eventKey={props.item1} onClick={() => filterItem(props.item1)}>{props.item1}</Dropdown.Item>
+                                                <Dropdown.Item eventKey={props.item2} onClick={() => filterItem(props.item2)}>{props.item2}</Dropdown.Item>
+                                                <Dropdown.Item eventKey={props.item3} onClick={() => filterItem(props.item3)}>{props.item3}</Dropdown.Item>
+                                                <Dropdown.Item eventKey={props.item4} onClick={() => filterItem(props.item4)}>{props.item4}</Dropdown.Item>
+                                                <Dropdown.Item eventKey={props.name} onClick={() => setItems(Data)}>None</Dropdown.Item>
+                                                </Dropdown.Menu>
+                                            </Dropdown>
+                                        </div>
+                                    )}
+                            )};
                 </div>
             </div>
             <hr/>
@@ -65,33 +80,4 @@ export default function Properties(props) {
         </div>
     )
 }
-
-
-export const  Drop = (props) => {
-
-    const [state , setState] = useState(`${props.name}`);
-
-    const handleSelect = (e) => {
-        setState(e);
-    }
-    
-    return (
-        <div>
-                <span style={{backgroundColor:"#7266eb"}}>
-                <Dropdown onSelect={handleSelect}>
-                        <Dropdown.Toggle id="dropdown-basic">
-                        {state}
-                        </Dropdown.Toggle>
-                        <Dropdown.Menu>
-                        <Dropdown.Item eventKey={props.item1} onClick={Properties(props.item1)}>{props.item1}</Dropdown.Item>
-                        <Dropdown.Item eventKey={props.item2} onClick={Properties(props.item2)}>{props.item2}</Dropdown.Item>
-                        <Dropdown.Item eventKey={props.item3} onClick={Properties(props.item3)}>{props.item3}</Dropdown.Item>
-                        <Dropdown.Item eventKey={props.item4} onClick={Properties(props.item4)}>{props.item4}</Dropdown.Item>
-                        <Dropdown.Item eventKey={props.name} onClick={Properties(props.name)}>None</Dropdown.Item>
-                        </Dropdown.Menu>
-                    </Dropdown>
-                    </span>
-                </div>
-    )
-};
 
