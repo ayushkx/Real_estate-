@@ -1,10 +1,12 @@
 import React from 'react';
 import HouseIcon from '@mui/icons-material/House';
+import Button from '@mui/material/Button';
+
 
 export default function Navbar() {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg" style={{backgroundColor:'#faddfb'}}>
+            <nav className="navbar navbar-expand-lg" style={{backgroundColor:'#ECEFF1 '}}>
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/"><span style={{textAlign:"justify" }}><HouseIcon/></span> Dream Home</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,6 +32,12 @@ export default function Navbar() {
                         </li>
                     </ul>
                     </div>
+                </div>
+                <div>
+                   <Button variant="outlined" sx={{color:"#7266eb"}}>Login</Button>
+                </div>
+                <div style={{margin:"0 5px 0 5px"}}>
+                   <Button variant="contained" sx={{backgroundColor:"#7266eb"}}>SignUp</Button>
                 </div>
                 </nav>
         </div>

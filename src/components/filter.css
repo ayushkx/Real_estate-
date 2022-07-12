@@ -5,9 +5,19 @@
 }
 
 .container {
-    margin: 20px 0 25px 0;
+    margin: 20px 5px 25px 5px;
+    padding: 20px 5px 20px 5px;
+    background-color: #ffffff;
+    border-radius: 15px;
    display:flex;
    flex-direction:row;
    width: 100%;
    justify-content: space-evenly;
+}
+
+.bar {
+    background-color: #ECEFF1 ;
+    padding:  0 0 3.5vh 0;
+    margin: 0 3.5vh 0 3.5vh;
+    border-radius: 15px;
 }

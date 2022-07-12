@@ -22,6 +22,7 @@ function createCard(Data) {
 
 export default function Properties() {
     const [items , setItems] = useState(Data) ;
+    const [val , setVal] = useState();
 
     const filterItem = (props) =>{
         const updateItems = Data.filter((curitem) => {
@@ -45,17 +46,17 @@ export default function Properties() {
 
     return (
         <div>
-            <div>
+            <div className='bar'>
                 <p className='para'>
-                    Search Properties to rent ......
+                    Search Properties to rent 
                 </p>
                 <div className='container'> 
                             {Bardata.map((props) => {
 
                             return (
                                 <div>
-                                        <Dropdown style={{backgroundColor:"#7266eb"}}>
-                                                <Dropdown.Toggle id="dropdown-basic">
+                                        <Dropdown >
+                                                <Dropdown.Toggle id="dropdown-basic" style={{backgroundColor:"#7266eb"}}>
                                                 {props.name}
                                                 </Dropdown.Toggle>
                                                 <Dropdown.Menu>
