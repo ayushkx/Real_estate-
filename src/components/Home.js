@@ -69,10 +69,9 @@ export default function Properties() {
                                             </Dropdown>
                                         </div>
                                     )}
-                            )};
+                            )}
                 </div>
             </div>
-            <hr/>
             <div className="flex-container ">
                    { items.map(createCard)}
             </div>

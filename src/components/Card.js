@@ -13,7 +13,7 @@ export default function Cards(props) {
                     <div className='card-content'>
                     <h3 className="card-title">{props.name}</h3>
                     <div>
-                     ₹{props.price}/month <StarsIcon sx={{ margin : "0 0 4% 30%"}}/>
+                     <span style={{color:"#7266eb" , fontWeight:"bold"}}>₹{props.price}</span>/month <StarsIcon sx={{ margin : "0 0 4% 30%"}}/>
                     </div>
                     <div className='card-text'>
                         Address-{props.Address}{props.location}
