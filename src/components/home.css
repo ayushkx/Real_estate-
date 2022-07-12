@@ -1,0 +1,15 @@
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+hr {
+    border: 0;
+    clear: both;
+    display: block;
+    margin: 0 5% 0 5%;
+    background-color: #ff0000;
+    height: 1px;
+  }
+  

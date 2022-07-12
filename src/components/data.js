@@ -1,8 +1,5 @@
-import KingBedIcon from '@mui/icons-material/KingBed';
-import BathtubIcon from '@mui/icons-material/Bathtub';
-import Crop54Icon from '@mui/icons-material/Crop54';
 
-const data = [
+const Data = [
     {
         id : 1 ,
         'name' : 'Corner House' ,
@@ -11,8 +8,9 @@ const data = [
         'date' : 'Today' ,
         'image' : '../assets/img1.jpg' ,
         'location':'Delhi',
-        'Address' : '' ,
-        'description' : ''
+        'Address' : 'Lorem ipsum dolor,' ,
+        'description1' : '3 beds' ,
+        'description2' : '2 Bathrooms'
     } ,
     {
         id : 2 ,
@@ -22,8 +20,9 @@ const data = [
         'date' : 'August' ,
         'image' : '../assets/img2.jpg' ,
         'location':'Mumbai',
-        'Address' : '' ,
-        'description' : ''
+        'Address' : 'Lorem ipsum dolor,' ,
+        'description1' : '4 beds',
+        'description2' :'2 Bathrooms'  
     } ,
     {
         id : 3 ,
@@ -33,8 +32,9 @@ const data = [
         'date' : 'Today' ,
         'image' : '../assets/img3.jpg' ,
         'location':'Noida',
-        'Address' : '' ,
-        'description' : ''
+        'Address' : 'Lorem ipsum dolor,' ,
+        'description1' : '2 beds',
+        'description2' :'2 Bathrooms'  
     } ,
     {
         id : 4,
@@ -44,19 +44,21 @@ const data = [
         'date' : 'September' ,
         'image' : '../assets/img4.jpg' ,
         'location':'Lucknow',
-        'Address' : '' ,
-        'description' : ''
+        'Address' : 'Lorem ipsum dolor,' ,
+        'description1' : '3 beds',
+        'description2' :'2 Bathrooms'  
     } ,
     {
         id : 5 ,
         'name' : 'Fox Corner' ,
         'price' : '20000' ,
         'type' : 'Farmhouse' ,
-        'date' : 'Today' ,
+        'date' : 'October' ,
         'image' : '../assets/img5.jpg' ,
         'location':'Delhi',
-        'Address' : '' ,
-        'description' : ''
+        'Address' : 'Lorem ipsum dolor,' ,
+        'description1' : '3 beds',
+        'description2' :'2 Bathrooms'  
     } ,
     {
         id : 6 ,
@@ -66,8 +68,9 @@ const data = [
         'date' : 'September' ,
         'image' : '../assets/img6.jpg' ,
         'location':'Delhi',
-        'Address' : '' ,
-        'description' : ''
+        'Address' : 'Lorem ipsum dolor,' ,
+        'description1' : '2 beds',
+        'description2' :'2 Bathrooms'  
     } ,
     {
         id : 7 ,
@@ -77,8 +80,9 @@ const data = [
         'date' : 'August' ,
         'image' : '../assets/img7.jpg' ,
         'location':'Noida',
-        'Address' : '' ,
-        'description' : ''
+        'Address' : 'Lorem ipsum dolor,' ,
+        'description1' : '4 beds',
+        'description2' :'1 Bathrooms'  
     } ,
     {
         id : 8 ,
@@ -88,8 +92,9 @@ const data = [
         'date' : 'Today' ,
         'image' : '../assets/img8.jpg' ,
         'location':'Mumbai',
-        'Address' : '' ,
-        'description' : ''
+        'Address' : 'Lorem ipsum dolor,' ,
+        'description1' : '4 beds',
+        'description2' :'3 Bathrooms'  
     } ,
     {
         id : 9 ,
@@ -99,8 +104,9 @@ const data = [
         'date' : 'September' ,
         'image' : '../assets/img9.jpg' ,
         'location':'Lucknow',
-        'Address' : '' ,
-        'description' : ''
+        'Address' : 'Lorem ipsum dolor,' ,
+        'description1' : '2 beds',
+        'description2' :'2 Bathrooms'  
     } ,
     {
         id : 10 ,
@@ -110,19 +116,21 @@ const data = [
         'date' : 'August' ,
         'image' : '../assets/img10.jpg' ,
         'location':'Lucknow',
-        'Address' : '' ,
-        'description' : ''
+        'Address' : 'Lorem ipsum dolor,' ,
+        'description1' : '4 beds',
+        'description2' :'2 Bathrooms'  
     } ,
     {
         id : 11 ,
         'name' : 'Ram Bhawan' ,
         'price' : '15000' ,
         'type' : 'house' ,
-        'date' : 'September' ,
+        'date' : 'October' ,
         'image' : '../assets/img11.jpg' ,
         'location':'Mumbai',
-        'Address' : '' ,
-        'description' : ''
+        'Address' : 'Lorem ipsum dolor,' ,
+        'description1' : '2 beds',
+        'description2' :'1 Bathrooms'  
     } ,
     {
         id : 12,
@@ -132,8 +140,9 @@ const data = [
         'date' : 'August' ,
         'image' : '../assets/img12.jpg' ,
         'location':'Noida',
-        'Address' : '' ,
-        'description' : ''
+        'Address' : 'Lorem ipsum dolor,' ,
+        'description1' : '3 beds',
+        'description2' :'2 Bathrooms'  
     } ,
     {
         id : 13 ,
@@ -143,19 +152,21 @@ const data = [
         'date' : 'Today' ,
         'image' : '../assets/img13.jpg' ,
         'location':'Delhi',
-        'Address' : '' ,
-        'description' : ''
+        'Address' : 'Lorem ipsum dolor,' ,
+        'description1' : '3 beds',
+        'description2' :'1 Bathrooms'  
     } ,
     {
         id : 14 ,
         'name' : 'Millfield' ,
         'price' : '20000' ,
         'type' : 'house' ,
-        'date' : 'Today' ,
+        'date' : 'October' ,
         'image' : '../assets/img14.jpg' ,
         'location':'Mumbai',
-        'Address' : '' ,
-        'description' : ''
+        'Address' : 'Lorem ipsum dolor,' ,
+        'description1' :'2 beds',
+        'description2' :'2 Bathrooms'  
     } ,
     {
         id : 15 ,
@@ -165,8 +176,9 @@ const data = [
         'date' : 'September' ,
         'image' : '../assets/img15.jpg' ,
         'location':'Lucknow',
-        'Address' : '' ,
-        'description' : ''
+        'Address' : 'Lorem ipsum dolor,' ,
+        'description1' : '3 beds' ,
+        'description2': '2 Bathrooms'  
     } ,
 
 ]
@@ -174,7 +186,7 @@ const data = [
 
 
 
-
+export default Data ;
 			
 			
 	 	
