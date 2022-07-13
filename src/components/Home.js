@@ -26,7 +26,7 @@ export default function Properties() {
 
 
     const filterItem = (props) =>{
-        const updateItems = Data.filter((curitem) => {
+        const updateItems = items.filter((curitem) => {
                 if(curitem.Price === props){
                     return curitem.Price === props ;
                 }
