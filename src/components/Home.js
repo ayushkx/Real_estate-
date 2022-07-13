@@ -24,6 +24,7 @@ export default function Properties() {
     const [items , setItems] = useState(Data) ;
     const [val , setVal] = useState();
 
+
     const filterItem = (props) =>{
         const updateItems = Data.filter((curitem) => {
                 if(curitem.Price === props){
