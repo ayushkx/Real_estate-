@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Real Estate App
+#### A real estate website which has house renting and buying functionality. It has filter function with 4 different criteria .
+
+<hr>
+
+### TOOLS/TECHNOLOGIES :- 
+#### Html , CSS , JavaScript , ReactJs , Material-UI .
+
+#
+## Deploy link
+https://taupe-tanuki-d37e03.netlify.app/ 
